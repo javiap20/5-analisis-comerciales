@@ -435,10 +435,10 @@ function init(data){
     Site: String(d["Publicación"] || "").trim().toLowerCase(),
     Product: toTitleCase(String(d["Producto"] || "").trim()),
     // CAMBIO AQUÍ: Nombre exacto de la columna del Excel para Sector
-    Sector: cleanSector(String(d["Sector del anunciante"] || "")), 
+    Sector: cleanSector(String(d["Sector"] || "")), 
     Comercial: toTitleCase(String(d["Comercial"] || "").trim()),
     // CAMBIO AQUÍ: Nombre exacto de la columna del Excel para Área
-    Area: toTitleCase(String(d["ÁREA"] || "").trim()), 
+    Area: toTitleCase(String(d["ÁREAS"] || "").trim()), 
     Anunciante: String(d["Anunciante"] || "SIN ANUNCIANTE").trim().toUpperCase(),
     Marca: toTitleCase(String(d["Marca"] || "").trim()),
     Familia: toTitleCase(String(d["Familia"] || "").trim())
